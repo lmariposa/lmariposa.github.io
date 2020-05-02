@@ -1,289 +1,255 @@
 <!DOCTYPE html>
-	<html>
-	<title>W3.CSS Template</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-	body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-	body, html {
-	  height: 100%;
-	  color: #777;
-	  line-height: 1.8;
-	}
-	
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
 
-	/* Create a Parallax Effect */
-	.bgimg-1, .bgimg-2, .bgimg-3 {
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	}
-	
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-	/* First image (Logo. Full height) */
-	.bgimg-1 {
-	  background-image: url("Leilah.jpg");
-	  min-height: 100%;
-	}
-	
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("Leilah.jpg");
+  min-height: 100%;
+}
 
-	/* Second image (Portfolio) */
-	.bgimg-2 {
-	  background-image: url("the-road-ahead-black-and-white-douglas-barnard.jpg");
-	  min-height: 400px;
-	}
-	
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("the-road-ahead-black-and-white-douglas-barnard.jpg");
+  min-height: 400px;
+}
 
-	/* Third image (Contact) */
-	.bgimg-3 {
-	  background-image: url("da9f1b63-0a8a-494b-9e5e-8d885fcf14a8.jpg");
-	  min-height: 400px;
-	}
-	
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("phone-booth-no-28-brian-carson.jpg");
+  min-height: 400px;
+}
 
-	.w3-wide {letter-spacing: 10px;}
-	{cursor: pointer;}
-	
+.w3-wide {letter-spacing: 10px;}
+{cursor: pointer;}
 
-	/* Turn off parallax scrolling for tablets and phones */
-	  @media only screen and (max-device-width: 1600px) {
-	  .bgimg-1, .bgimg-2, .bgimg-3 {
-	    background-attachment: scroll;
-	    min-height: 400px;
-	  }
-	}
-	</style>
-	<body>
-	
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
 
-	<!-- Navbar (sit on top) -->
-	<div class="w3-top">
-	  <div class="w3-bar" id="myNavbar">
-	    <a class="w3-bar-item w3-button w3-grey w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-	      <i class="fa fa-bars"></i>
-	    </a>
-	    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-	    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-	    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-	    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-	    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">
-	      <i class="fa fa-star-half-full”></i>
-	    </a>
-	  </div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-grey w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
-	<!-- Navbar on small screens -->
- 	 <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-   	 <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-   	 <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-   	 <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-   	 <a href="#" class="w3-bar-item w3-button">SEARCH</a>
- 	 </div>
-	</div>
-	
-	<!-- First Parallax Image with Logo Text -->
-	<div class="bgimg-1 w3-display-container" id="home">
-	  <div class="w3-display-middle" style="white-space:nowrap;">
-	    <span class="w3-center w3-padding-large w3-black w3-xlarge">  <span class="w3-hide-small"> LEILAH GAIA </span>
-	  </div>
-	</div>
-	
-												     
-	<!-- Container (About Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="about">
-	  <h3 class="w3-center">ABOUT ME</h3>
-	  <p class="w3-center"><em>Musician, Songwriter</em></p>
-	  <p>I was born and raised in Upstate New York. When I was seven I asked to play the upright bass. I was too small to play the bass and my grandfather, a luthier, had an extra ½ size cello that needed a home. So I started playing cello and then piano. I was constantly looking towards music to express myself. I wrote songs for piano and as time went by I started writing for the guitar. In high school, I began to focus on my voice. I attended Doane Stuart, a private college preparatory school in Albany, NY. At Doane, I began performing my music. I would sing on Tuesdays and Thursdays sometimes just for the high school and sometimes for the entire school. I loved performing and inspiring all of the younger students to express themselves through music. </p>
-	 <p> My first gig outside of school was at a local Ice Cream Shop. I spent my summer performing for tips and pints of ice cream. Even though music consumed most of my life I still thought of it as a hobby. My highschool course schedule was designed so that I would be prepared to go straight into a career in Microbiology but one afternoon I took a leap step and decided I need to go to college for music. I auditioned for college without classical or technical training. I practiced my ass off and I sang for my future, from my heart. I am now an undergraduate at Berklee College of Music. I am studying music business, music engineering, and vocal performance. </p>
-	  <div class="w3-row">
-	    <div class="w3-col m6 w3-center w3-padding-large">
-	       <p><b><i class="fa fa-user w3-margin-right"></i> Leilah Gaia Mariposa</b></p><br>
-	       <img src="Bio.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
-	    </div>
-	
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
 
-	    <!-- Hide this text on small devices -->
-	    <div class="w3-col m6 w3-hide-small w3-padding-large">
-	      <p> Welcome to my website! This site offers a peek inside my world as a performer and artist. On this site, you can find videos of my performances, links to my recorded music and social media sites. Please feel free to reach out to me with over email or on one of my many social media accounts. </p>
-	    </div>
-	  </div>
-	
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge">  <span class="w3-hide-small"> LEILAH GAIA </span>
+  </div>
+</div>
 
-	  <!-- Spacer -->
-	  <div class="w3-content w3-container w3-padding-64" id="about">
-	    <h3 class="w3-center">    </h3>
-	    <p class="w3-center"><em>                             </em></p>
-	    <p>                                                                 </p>
-	      </div>
-	
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Musician, Songwriter</em></p>
+  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Leilah Gaia</b></p><br>
+      <img src="Bio.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
 
-	<!-- Second Parallax Image with Portfolio Text -->
-	<div class="bgimg-2 w3-display-container">
-	  <div class="w3-display-middle">
-	    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-	  </div>
-	</div>
-	
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
 
-	<!-- Container (Portfolio Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="portfolio">
-	  <h3 class="w3-center">MY WORK</h3>
-	  <p class="w3-center"><em>Check out some of my work.<br> Click to View</em></p><br>
-	
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">    </h3>
+    <p class="w3-center"><em>                             </em></p>
+    <p>                                                                 </p>
+      </div>
 
-	 <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-	  <div class="w3-row-padding w3-center">
-	    <div class="w3-col m3">
-	      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FLVUvpFanMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	    </div>
-	
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
 
-	    <div class="w3-col m3">
-	      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDoaneStuartSchool%2Fvideos%2F10155094458593388%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-	    </div>
-	
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
-	    <div class="w3-col m3">
-	      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDoaneStuartSchool%2Fvideos%2F10154431717053388%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-	    </div>
-	
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <iframe width:"100%" height="100%" src= onclick="onClick(this)" class="w3-hover-opacity" alt="My First Song">
+    </div>
 
-	    <div class="w3-col m3">
-	      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/V9dvFaGCAdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	    </div>
-	  </div>
-	
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Devil's Way Out Performance">
+    </div>
 
-	  <div class="w3-row-padding w3-center w3-section">
-	    <div class="w3-col m3">
-	      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/740908825&color=%235b5b5b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/leilah_gaia" title="Leilah Gaia" target="_blank" style="color: #cccccc; text-decoration: none;">Leilah Gaia</a> · <a href="https://soundcloud.com/leilah_gaia/mtec-final-waves" title="MTEC FINAL - Waves" target="_blank" style="color: #cccccc; text-decoration: none;">MTEC FINAL - Waves</a></div>
-	    </div>
-	
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cafe Lena Performance">
+    </div>
 
-	    <div class="w3-col m3">
-	      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/417317511&color=%23646464&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/leilah_gaia" title="Leilah Gaia" target="_blank" style="color: #cccccc; text-decoration: none;">Leilah Gaia</a> · <a href="https://soundcloud.com/leilah_gaia/some-of-shelleys-blues-michael-nesmith-leilah-the-bourgeois-rebellion" title="Some Of Shelley's Blues (Michael Nesmith) - Leilah & The Bourgeois Rebellion" target="_blank" style="color: #cccccc; text-decoration: none;">Some Of Shelley's Blues (Michael Nesmith) - Leilah & The Bourgeois Rebellion</a></div>
-	    </div>
-	
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
 
-	    <div class="w3-col m3">
-	      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396030912&color=%23555555&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/leilah_gaia" title="Leilah Gaia" target="_blank" style="color: #cccccc; text-decoration: none;">Leilah Gaia</a> · <a href="https://soundcloud.com/leilah_gaia/ode-to-orion" title="Ode To Orion" target="_blank" style="color: #cccccc; text-decoration: none;">Ode To Orion</a></div>
-	    </div>
-	
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Youtube Channel">
+    </div>
 
-	    <div class="w3-col m3">
-	      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321027715&color=%23767477&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/leilah_gaia" title="Leilah Gaia" target="_blank" style="color: #cccccc; text-decoration: none;">Leilah Gaia</a> · <a href="https://soundcloud.com/leilah_gaia/like-a-mother-would" title="Like A Mother Would" target="_blank" style="color: #cccccc; text-decoration: none;">Like A Mother Would</a></div>
-	    </div>
-	</div>
-	
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
 
-	<!-- Modal for full size images on click-->
-	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-	  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-	  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-	    <img id="img01" class="w3-image">
-	    <p id="caption" class="w3-opacity w3-large"></p>
-	  </div>
-	</div>
-	  
-	  <!-- Spacer -->
-	  <div class="w3-content w3-container w3-padding-64" id="about">
-	    <h3 class="w3-center">    </h3>
-	    <p class="w3-center"><em>                             </em></p>
-	    <p>                                                                 </p>
-	      </div>
-	  
-	<!-- Third Parallax Image with Contact Text -->
-	<div class="bgimg-3 w3-display-container">
-	  <div class="w3-display-middle">
-	     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-	  </div>
-	</div>
-	
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
 
-	<!-- Container (Contact Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="contact">
-	  <h3 class="w3-center">WHERE I WORK</h3>
-	  <p class="w3-center"><em>I'd love to hear from you!!</em></p>
-	
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
 
-	  <div class="w3-row w3-padding-32 w3-section">
-	    <div class="w3-col m4 w3-container">
-	      <img src="IMG_20200430_135948-3.jpg" class="w3-image w3-round" style="width:100%">
-	    </div>
-	    <div class="w3-col m8 w3-panel">
-	      <div class="w3-large w3-margin-bottom">
-	        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Albany, NY & Boston, MA <br>
-	        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mariposaleilah@gmail.com<br>
-	      </div>
-	      <p>Contact Me:</p>
-	      <form action="/action_page.php" target="_blank">
-	        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-	          <div class="w3-half">
-	            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-	          </div>
-	          <div class="w3-half">
-	            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-	          </div>
-	        </div>
-	        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-	        <button class="w3-button w3-black w3-right w3-section" type="submit">
-	          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-	        </button>
-	      </form>
-	    </div>
-	  </div>
-	</div>
-	
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
-	<!-- Footer -->
-	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-	  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-	  <div class="w3-xlarge w3-section">
-	     <a href=https://www.instagram.com/leilah_gaia/?hl=en target="_blank"><i class="fa fa-instagram "></i>
-	     <a href=https://www.youtube.com/channel/UC-xpeMwUsUedAyodGz7_rDQ target="_blank"><i class="fa fa-youtube"></i>
-	     <a href=https://soundcloud.com/leilah_gaia target="_blank"><i class="fa fa-soundcloud"></i></a>
-	     <a href=https://www.facebook.com/leilah.gaia target="_blank"><i class="fa fa-facebook-official"></i></a>
-	  </div>
-	    <p> Copyright © 2020</p>
-	 </footer>
-	
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
 
-	<script>
-	// Modal Image Gallery
-	function onClick(element) {
-	  document.getElementById("img01").src = element.src;
-	  document.getElementById("modal01").style.display = "block";
-	  var captionText = document.getElementById("caption");
-	  captionText.innerHTML = element.alt;
-	}
-	
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love to hear from you!!</em></p>
 
-	// Change style of navbar on scroll
-	window.onscroll = function() {myFunction()};
-	function myFunction() {
-	    var navbar = document.getElementById("myNavbar");
-	    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-	        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-	    } else {
-	        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-	    }
-	}
-	
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="IMG_20200430_135948-3.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Albany, NY & Boston, MA <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mariposaleilah@gmail.com<br>
+      </div>
+      <p>Contact Me:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
-	// Used to toggle the menu on small screens when clicking on the menu button
-	function toggleFunction() {
-	    var x = document.getElementById("navDemo");
-	    if (x.className.indexOf("w3-show") == -1) {
-	        x.className += " w3-show";
-	    } else {
-	        x.className = x.className.replace(" w3-show", "");
-	    }
-	}
-	</script>
-	
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+  </div>
 
-	</body>
-	</html>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
